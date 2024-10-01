@@ -1,0 +1,170 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{AddMaths-Limits}
+\author{kafka }
+\date{October 2024}
+
+\begin{document}
+
+\maketitle
+
+
+\section{AM 3.05}
+1. $$\displaystyle \lim_{x\to\infty} \frac{(1-2x)^3}{(x-1)(2x^2+x+1)}$$ 
+Solution :
+\begin{itemize}
+\item Expand and Simplify Multiplication :  
+$$\displaystyle \lim_{x\to\infty}\frac{(-8x^3+12x^2-6x+1)}{(2x^3-x^2-1)}$$
+\item In fractions of Limit to Infinity, We see only the variable(x) with the highest power. QED : Divide by highest power. 
+$\frac{-8}{2} = 4$
+
+2. $$\displaystyle \lim_{x\to\infty} \left(\frac{\sqrt{9x^2-6x+4}}{\sqrt[3]{x^3+3x^2+3x+1}}\right)$$
+Solution : 
+
+\item Simplify Equation : 
+$$9x^2-6x+4 = (3x-2)^2; \sqrt{(3x-2)^2} = (3x-2)$$
+According to Pascal's Triangle. The pattern for cubic equations are (1 3 3 1). This abides that, so the base of the formula is (x+1)
+Divide by the highest power and we get $$\frac{3x}{x} = 3$$
+
+3. $$\displaystyle \lim_{x\to\infty} 2x\left(\sqrt{9+\frac{10}{x}}-3\right)$$
+Solution :
+
+\item Apply Distribution 
+$\displaystyle \lim_{x\to\infty}$2$\sqrt{9+\frac{10}{x}}x$-6x
+Following the rule : If coefficient of highest power is equal to of the opposite,$\frac{b-q}{2\sqrt{a}}$
+\item Expanding the equation we get :
+$$\sqrt{36x^2+40x}-\sqrt{36x^2}$$ = $\frac{40-0}{2\sqrt{36}} = \frac{10}{3}$
+
+4. $$\displaystyle \lim_{x\to\infty} \left(\frac{5x^2+6x+4}{x^4+10}\right)$$
+Solution : 
+
+\item  Identify highest power of x in denominator and numerator. QED 2<4
+$\displaystyle\frac{...}{\infty}$ = 0
+
+5. $$\displaystyle \lim_{x\to\infty}\left(\frac{\sqrt{3x^2-2x+1}}{x+100}\right)$$
+Solution : 
+
+\item Divide by Highest denominator power
+$$\lim_{x\to \:\infty \:}\left(\frac{\frac{\sqrt{3x^2-2x+1}}{x}}{1+\frac{100}{x}}\right)$$
+\item Insert limit to both denominator and numerator
+$$\displaystyle |\lim_{x\to\infty} \frac{\sqrt{3x^2-2x+1}}{x}| |\lim_{x\to\infty}\frac{1}{1+100x}|$$
+$$\displaystyle\lim_{x\to\infty}\frac{1}{1+100x} = 1$$
+$$\displaystyle \lim_{x\to\infty} \frac{\sqrt{3x^2-2x+1}}{x} = \sqrt{3} \sqrt{1}*1$$
+QED, $\sqrt{3}$
+
+6. $$\displaystyle \lim_{x\to\infty}(\sqrt{x}-\sqrt{x-2})$$
+Solution : 
+
+\item Begin by multiplying opposite of the arithmetic operation (- $\to +, + \to -$) To make this equation appropriate, we should also divide it by the same value of multiplication as to make it the equivalent to the original equation.
+$$\frac{x-(x-2)}{\sqrt{x}+\sqrt{x-2}}$$
+\item Simplify 
+$$\frac{2}{\sqrt{x}+\sqrt{x-2}}$$
+Because the numerator contains no value of x, anything that is divided by infinity equals to 0
+QED, 0
+
+7. $$\displaystyle \lim_{x\to\infty}(\sqrt{x^4+2x^3+4x^2}-\sqrt{x^2+2x^3-x^2})$$
+Solution : 
+
+\item Because the value of a and p are equal so as the coefficient of power($ax^m+bx^n+c^l)-(px^m+qx^n+r^l)$, we can use $\frac{b-q}{2\sqrt{a}}$
+$$\frac{2-2}{2\sqrt{1}}$$
+QED, 0
+
+8. $$\displaystyle \lim_{x\to\infty}\left(\sqrt{(x-3)}^2-x-3\right)$$
+Solution :
+
+\item Group (x-3) together $\to$ - (x+3) and now we can multiply that (x+3) by (x+3) to make it eligible for $\frac{b-q}{2\sqrt{a}}$, but we also have to keep in mind to square root it. After that, expand the two equations.
+$$\displaystyle \lim_{x\to\infty} \sqrt{x^2-6x+9}-\sqrt{x^2+6x+9}$$
+Now, it is eligible 
+$$\frac{-6-6}{2\sqrt{1}}$$
+QED, -6
+
+9. $$\displaystyle \lim_{x\to\infty}\left(x-3-\sqrt{(x+3)^2}\right)$$
+Solution : 
+
+\item We can multiply (x-3) by (x-3) to make it eligible for $\frac{b-q}{2\sqrt{a}}$, but we also have to keep in mind to square root it. After that, expand the two equations.
+$$\displaystyle \lim_{x\to\infty} \sqrt{x^2-6x+9}-\sqrt{x^2+6x+9}$$
+
+$$\frac{-6-6}{2\sqrt{1}}$$
+QED, -6
+10. $$\displaystyle \lim_{x\to\infty}\left((\sqrt{4x+2}-2x)\sqrt{x+1}\right)$$
+Solution : 
+
+\item Apply distribution law to the problem (a + b) * c = ac + bc. Make it so it's 1 - ... 
+$$(1-\frac{2x}{\sqrt{4x+2}})(\sqrt{x+1}\sqrt{4x+2})$$
+\item Apply limit to the two (lim ... * lim ...)
+$$\displaystyle \lim_{x\to\infty}1-\frac{2x}{\sqrt{4x+2}}\lim_{x\to\infty}(\sqrt{x+1}\sqrt{4x+2})$$
+$$\displaystyle \lim_{x\to\infty}1-\frac{2x}{\sqrt{4x+2}} \to -\infty$$ you could find the proof by rationalizing it and subtracting it, the value should be negative from the start and divided by the denominator by the end, remaining negative. 
+$$\lim_{x\to\infty}(\sqrt{x+1}\sqrt{4x+2})$$, both equals to positive $\infty$. 
+QED, $-\infty * \infty * \infty = -\infty$
+
+11. $$\displaystyle \lim_{x\to\infty}\left(x-3-\sqrt{(x+3)^2}\right)$$
+Solution : 
+
+\item We can multiply (x-3) by (x-3) to make it eligible for $\frac{b-q}{2\sqrt{a}}$, but we also have to keep in mind to square root it. After that, expand the two equations.
+$$\displaystyle \lim_{x\to\infty} \sqrt{x^2-6x+9}-\sqrt{x^2+6x+9}$$
+
+$$\frac{-6-6}{2\sqrt{1}}$$
+QED, -6
+12. $$\displaystyle \lim_{x\to\infty} (\sqrt{x-\sqrt{x}}-\sqrt{x+\sqrt{x}})$$
+Solution : 
+
+\item Begin by multiplying opposite of the arithmetic operation (- $\to +, + \to -$) To make this equation appropriate, we should also divide it by the same value of multiplication as to make it the equivalent to the original equation.
+$$\displaystyle \lim_{x\to\infty} \frac{x-\sqrt{x}-x-\sqrt{x}}{\sqrt{x-\sqrt{x}}-\sqrt{x+\sqrt{x}}}$$
+\item Simplify and divide by the largest value of x
+$$\displaystyle \lim_{x\to\infty}\frac{\frac{-2\sqrt{x}}{\sqrt{x}}}{\frac{\sqrt{x-\sqrt{x}}}{\sqrt{x}}+\frac{\sqrt{x+\sqrt{x}}}{\sqrt{x}}}$$
+\item Divide and Simplify 
+$$\displaystyle \lim_{x\to\infty}\frac{-2}{1-\frac{\sqrt{x}}{x}+1+\frac{\sqrt{x}}x}$$
+\item Simplify
+$\frac{-2}{2}$
+QED, -1
+
+13. $$\displaystyle \lim_{x\to\infty}\left(2+\frac{2}{2+\frac{2}{2+\frac{2}{x}}}\right)$$
+Solution : 
+
+\item Attend the smallest of the fractions $\left(\displaystyle \lim_{x\to\infty}\frac{2}{x} = 0\right)$
+\item Apply Arithmetic
+$\left(2+\frac{2}{2+\frac{2}{2+0}}\right)$
+$$2+\frac{2}{2+1}\to 2+\frac{2}{3}$$
+$$2+\frac{2}{3}$$
+QED, $\frac{8}{3}$
+
+14. Tentukan nilai dari $$\displaystyle \lim_{n\to\infty}\frac{S_{3n}}{S_n}$$ Jika $S_n$ menyatakan jumlah \textit{n} suku pertama deret aritmetika. 
+\item Recall the formula for total Sum $\frac{n}{2}(a+Un)$
+\item Apply the formula to the problem
+$$\displaystyle \lim_{n\to\infty}\frac{\frac{3n}{2}(a+3n)}{\frac{n}{2}(a+n)}$$
+\item Match and Divide the corresponding values
+$$\frac{\frac{3n}{2}}{\frac{n}{2}}\to3$$
+$$\frac{a+3n}{a+n}\to3$$
+\item 3 * 3 
+QED, 9
+15. Buktikan bahwa $$\displaystyle \lim_{x\to\infty}\left(\sqrt{2x-7}-\sqrt{x+2}=\infty\right)$$
+\item Begin by multiplying opposite of the arithmetic operation (- $\to +, + \to -$) To make this equation appropriate, we should also divide it by the same value of multiplication as to make it the equivalent to the original equation.
+$$\displaystyle \lim_{x\to\infty}\frac{2x-7-x+2}{\sqrt{2x-7}-\sqrt{x+2}}$$
+\item Simplify 
+$$\frac{x-9}{\sqrt{2x-7}-\sqrt{x+2}}$$
+\item Divide by highest power in denominator
+$$\frac{\frac{x-9}{\sqrt{x}}}{\frac{\sqrt{2x-7}}{\sqrt{x}}+\frac{\sqrt{x+2}}{\sqrt{x}}}$$
+\item Simplify 
+$$\displaystyle \lim_{x\to\infty}\frac{x-9}{\sqrt{x}}\to \infty$$
+$$\displaystyle \lim_{x\to\infty}\frac{\sqrt{2x-7}}{\sqrt{x}}\to \sqrt{2 -\frac{7}{x}}\to \sqrt{2}$$
+$$\displaystyle \lim_{x\to\infty}\frac{\sqrt{x+2}}{\sqrt{x}}\to \sqrt{1+\frac{2}{x}}\to 1$$
+$$\frac{\infty}{\sqrt{2}*{1}}$$
+QED, $$\infty$$
+16. Buktikan bahwa $\displaystyle \lim_{x\to\infty}\left(\sqrt{x^2-2x+7}-\sqrt{2x^2-1}\right)=-\infty$
+\item Begin by multiplying opposite of the arithmetic operation (- $\to +, + \to -$) To make this equation appropriate, we should also divide it by the same value of multiplication as to make it the equivalent to the original equation.
+$$\frac{x^2-2x+7-2x^2+1}{\sqrt{x^2-2x+7}+\sqrt{2x^2-1}}$$
+\item Simplify and divide by the highest power of x in the denominator 
+$$\displaystyle \lim_{x\to\infty}\frac{(\frac{-x^2}{x}\to -x)+(\frac{-2x}{x}\to -2)+(\frac{8}{x}\to 0)}{(\frac{\sqrt{x^2-2x+7}}{x}\to x)+(\frac{\sqrt{2x^2-1}}{x}\to2x)}$$
+\item (-x) is the remaining variable.
+QED, $$-\infty$$
+17. Tentukan $$\displaystyle \lim_{x\to\infty}(\sqrt{x+1}+\sqrt{2x+1})$$
+Solution :
+\item Begin by multiplying opposite of the arithmetic operation (- $\to +, + \to -$) To make this equation appropriate, we should also divide it by the same value of multiplication as to make it the equivalent to the original equation.
+$$\frac{x+1-2x-1}{\sqrt{x+1}-\sqrt{2x+1}}$$
+\item Simplify and divide by the highest power of x in the denominator
+$$\frac{(\frac{(-x)}{\sqrt{x}}\to -\infty)}{(\frac{\sqrt{x+1}}{\sqrt{x}}\to 1)-(\frac{\sqrt{2x+1}}{\sqrt{x}}\to 2)}$$
+QED, $-\infty$
+\end{itemize}
+\end{document}
+
